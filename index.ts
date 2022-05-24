@@ -7075,9 +7075,9 @@ const filter = (array, nestedProp, fn) => {
 
 const valid = (item, filters) => Object.keys(filters).every((key) => filters[key].indexOf(item[key]) !== -1);
 
-const resourceresult = filter(arrColl, 'children', (item) => valid(item, resourceFilters));
+const resourceResult = filter(arrColl, 'children', (item) => valid(item, resourceFilters));
 
-console.log(resourceresult, 'resourceresult');
+console.log(resourceResult, 'resourceResult');
 
 const tocResult = filter(arrColl, 'children', (item) => valid(item, tocFilters));
 console.log(tocResult, 'tocResult');
